@@ -7,14 +7,22 @@ Ein Third-Person-Fantasy-Online-RPG für Windows-PC, entwickelt mit Unity und C#
 
 ## Aktueller Status
 
-**Phase 0 – Planung.** Es existiert noch kein Unity-Projekt und kein spielbarer Code.
+**Phase 1 – lokaler Prototyp, in Arbeit.**
 
 | Bereich | Status |
 |---|---|
-| Unity-Projekt | geplant |
-| Third-Person-Bewegung und Kamera | geplant |
+| Unity-Projekt (`Game/`) | noch nicht angelegt |
+| Third-Person-Bewegung und Kamera | Skripte geschrieben, **nicht getestet** |
 | Kampf und Loot | geplant |
 | Multiplayer | geplant |
+
+## Ordner
+
+| Ordner | Inhalt |
+|---|---|
+| `docs/` | Vision, Entscheidungen, Roadmap, Einrichtungsanleitung |
+| `UnityImport/` | vorbereitete Skripte, die einmalig in `Game/Assets` kopiert werden |
+| `Game/` | das Unity-Projekt (wird mit dem Unity Hub angelegt) |
 
 ## Geplante Technik
 
@@ -22,16 +30,15 @@ Ein Third-Person-Fantasy-Online-RPG für Windows-PC, entwickelt mit Unity und C#
 - **Sprache:** C#
 - **Netzwerk (Empfehlung, noch nicht bestätigt):** Netcode for GameObjects
 
-## Einrichtung (für Entwickler)
+## Einrichtung und Test
 
-1. Unity Hub installieren.
-2. Unity 6.3 LTS installieren, mit den Modulen *Windows Build Support* und
-   *Windows Dedicated Server Build Support*.
-3. Visual Studio Community (oder VS Code mit C#-Erweiterung) installieren.
-4. Git installieren und dieses Repository klonen.
+Schritt-für-Schritt-Anleitung: [`docs/SETUP_GUIDE.md`](docs/SETUP_GUIDE.md)
 
-Eine genaue Anleitung zum Öffnen und Testen folgt, sobald das Unity-Projekt angelegt ist.
+Steuerung im Prototyp: **WASD** laufen, **Maus** umsehen, **Mausrad** zoomen,
+**Leertaste** springen, **Esc** Mauszeiger freigeben.
 
 ## Bekannte Einschränkungen
 
-- Noch nichts implementiert oder getestet.
+- Die Skripte wurden ohne Unity geschrieben und sind noch nie kompiliert oder getestet worden.
+- Tasten sind fest belegt; frei belegbare Tasten folgen später.
+- Kein Netzwerk – reiner lokaler Prototyp.
